@@ -1,0 +1,1 @@
+docker run -it -p 8080:8080 liferay/dxp:7.1.10.1

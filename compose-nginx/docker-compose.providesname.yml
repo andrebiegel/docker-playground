@@ -1,0 +1,11 @@
+version: '3'
+services:
+# starts container defined by the Dockerfile with context ; exposing 8080 to 80 internally  
+  nginx:
+  # sets the name and tag of the container beeing build
+    image: mycontainer:version1
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
